@@ -4,7 +4,7 @@ for f in  $(find ~/Alarm_data/ -name '*.sig*' -or -name '*.wav' -or -name '*.pub
 	cp $f ~/Alarm_data/
 done
 
-cd $HOME/motion-alert/soundsimple/build/src/
+cd $HOME/cryptoalarm/soundsimple/build/src/
 #cp ~/Alarm_data/key_1.pub .
 
 for f in  ~/Alarm_data/*.wav

@@ -23,5 +23,5 @@ fi
 #$HOME/PyMailSender/sendmail.py PUBLIC_KEY "Alarm is running" "$HOME/chainsign/$key"
 
 #cd $HOME/motion-alert/soundsimple/src/
-cd $HOME/motion-alert/soundsimple/build/src
+cd $HOME/cryptoalarm/soundsimple/build/src
 ./simplesound -a
