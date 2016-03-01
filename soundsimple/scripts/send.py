@@ -54,7 +54,7 @@ def sendMail(message, filename) :
 	os.system(command)
 
 def sendXMPP(message) : 
-	command = "$HOME/motion-alert/soundsimple/scripts/send-xmpp.sh " + " \"" + message + "\" " 
+	command = "$HOME/cryptoalarm/soundsimple/scripts/send-xmpp.sh " + " \"" + message + "\" " 
 	print command
 	os.system(command)
 	logging.info(command)

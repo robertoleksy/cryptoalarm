@@ -15,4 +15,4 @@ m="$1 alertalert2-snd"
 #echo "$m"  | sendxmpp $opt alarm rfree@mempo.org
 #echo "$1""$m"  | sendxmpp $opt alarm rfree.mobile@jit.si
 
-echo "$1""$m"  | sendxmpp $opt alarm rob100@dukgo.com
+echo "$1""$m"  | sendxmpp $opt alarm dorota@meshnet.pl

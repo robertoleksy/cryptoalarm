@@ -15,6 +15,6 @@ echo "send $1"
 ./send_msg/send_msg fifo "$head/$1"
 cd "$currpwd"
 
-bash lib_event.sh "recdone" "info"
+#bash lib_event.sh "recdone" "info"
 
 echo "*******************on_movie_end stop"
