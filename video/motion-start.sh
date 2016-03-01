@@ -36,8 +36,8 @@ if [[ $0 != "./motion-start.sh" ]]; then
 fi
 
 if [ -d ~/keys ]; then
-	files=(~/keys/*)
-	if [ ${#files[@]} -gt 0 ]; then
+	files=`ls ~/keys/ | wc -l`
+	if [[ $files -gt 0 ]] ; then
 		echo "****ERROR****"
 		echo "~/keys dir is not empty"
 		exit
@@ -45,8 +45,8 @@ if [ -d ~/keys ]; then
 fi
 
 if [ -d ~/cryptoalarm/video/rec ]; then
-	files=(~/cryptoalarm/video/rec)
-	if [ ${#files[@]} -gt 0 ]; then
+	files=`ls ~/cryptoalarm/video/rec | wc -l`
+	if [[ $files -gt 0 ]] ; then
 	        echo "****ERROR****"
 	        echo "~/cryptoalarm/video/rec dir is not empty"
         	exit
@@ -87,7 +87,7 @@ if [[ $debian_ver < 8 ]]; then
 	motion -c motion.conf-old2
 else
 	echo "NEW ver"
-	motion -c motion.conf-old2
+	motion
 fi
 
 if [[ $1 != "--dry-run" ]]; then
