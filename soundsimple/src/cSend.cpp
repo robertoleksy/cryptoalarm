@@ -11,7 +11,7 @@
 
 using namespace std;
 
-const string cSend::sendScript = "motion-alert/soundsimple/scripts/send.py ";
+const string cSend::sendScript = "cryptoalarm/soundsimple/scripts/send.py ";
 bool cSend::simulationMode = false;
 
 cSend::cSend()
