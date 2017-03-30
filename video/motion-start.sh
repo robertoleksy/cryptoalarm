@@ -62,6 +62,10 @@ if [[ $1 != "--dry-run" ]]; then
 		sleep 1
 	done
 	sha512sum ~/keys/key_1.pub > ~/keys/key_1.pub.sha512
+	echo "----------------------------------"
+	echo "SAVE THIS CONTROL SUM"
+	sha512sum ~/keys/key_1.pub
+	echo "----------------------------------"
 
 	echo "guarding-since-$date[$1]" > ~/stat
 
