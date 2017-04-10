@@ -1,6 +1,7 @@
 #!/bin/bash
 date=$(date +%Y-%m-%d_%H:%M:%S%z)
 start_dir=`pwd`
+rm /dev/shm/chainsign /dev/shm/fifo
 
 function ask() {
         REPLY=$1
